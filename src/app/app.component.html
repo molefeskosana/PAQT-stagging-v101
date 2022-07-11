@@ -6,16 +6,25 @@
            style="margin-right: 10px; padding-left: 50px"
     ></label>
     <mat-form-field style="margin-right: 10px">
-      <input matInput [matDatepicker]="fromPicker" placeholder="Pick a date">
+      <input matInput
+             [(ngModel)]="startDate"
+             [matDatepicker]="fromPicker"
+             placeholder="Pick a date">
       <mat-datepicker-toggle matSuffix [for]="fromPicker"></mat-datepicker-toggle>
-      <mat-datepicker #fromPicker startView="month" [startAt]="startDate"></mat-datepicker>
+      <mat-datepicker
+        #fromPicker startView="month"
+        [startAt]="startDate">
+      </mat-datepicker>
     </mat-form-field>
     <label [textContent]="'To'"
            [for]="toPicker"
            style="margin-right: 10px"
     ></label>
     <mat-form-field style="margin-right: 10px">
-      <input matInput [matDatepicker]="toPicker" placeholder="Pick a date">
+      <input matInput
+             [(ngModel)]="endDate"
+             [matDatepicker]="toPicker"
+             placeholder="Pick a date">
       <mat-datepicker-toggle matSuffix [for]="toPicker"></mat-datepicker-toggle>
       <mat-datepicker #toPicker startView="month" [startAt]="endDate"></mat-datepicker>
     </mat-form-field>

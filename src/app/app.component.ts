@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {CellClickedEvent, ColDef, GridReadyEvent} from "ag-grid-community";
+import { ColDef, GridReadyEvent} from "ag-grid-community";
 import {HttpClient} from "@angular/common/http";
 import {AgGridAngular} from "ag-grid-angular";
 import {Observable} from "rxjs";
@@ -13,8 +13,8 @@ export class AppComponent {
 
   @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
 
-  startDate = new Date();
-  endDate = new Date();
+  startDate:Date | null = new Date();
+  endDate:Date | null = new Date();
   public rowData$!: Observable<any[]>;
 
   constructor(private http: HttpClient) {}
@@ -48,7 +48,7 @@ export class AppComponent {
   };
 
   onGridReady(params: GridReadyEvent) {
-
+    this.rowData$ = new Observable<any[]>();
   }
 
   onSubmit(){
@@ -57,9 +57,8 @@ export class AppComponent {
   }
 
   onReset(){
-    this.startDate = new Date();
-    this.endDate = new Date();
+    this.startDate = null;
+    this.endDate = null;
     this.rowData$ = new Observable<any[]>();
   }
-
 }
