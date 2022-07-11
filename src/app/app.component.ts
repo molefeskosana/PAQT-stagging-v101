@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'play-time-project';
+  studentName: string = "";
+  className: string = "";
+  students: any = [];
+
+  onAddNewStudentToClass(){
+    this.students.push({studentName: this.studentName, className : this.className })
+  }
 }
