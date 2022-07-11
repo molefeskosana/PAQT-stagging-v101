@@ -1,0 +1,51 @@
+[
+  {
+    "id": 12,
+    "name": "John",
+    "lastName": "Doe",
+    "address": "1530 Neverland",
+    "meterNumber": "444444444"
+  },
+  {
+    "id": 22,
+    "name": "James",
+    "lastName": "Davidson",
+    "address": "150 Parkland",
+    "meterNumber": "55555555"
+  },
+  {
+    "id": 32,
+    "name": "Barbara",
+    "lastName": "McCoy",
+    "address": "30 Newland",
+    "meterNumber": "6666666666"
+  },
+  {
+    "id": 42,
+    "name": "Benny",
+    "lastName": "Doom",
+    "address": "53 Cleaveland",
+    "meterNumber": "7777777777"
+  },
+  {
+    "id": 52,
+    "name": "Sully",
+    "lastName": "Jupiter",
+    "address": "44 New Jersy",
+    "meterNumber": "888888888"
+  },
+  {
+    "id": 62,
+    "name": "Katherine",
+    "lastName": "Cooper",
+    "address": "1 Brooklyn",
+    "meterNumber": "11111111111"
+  },
+  {
+    "id": 72,
+    "name": "David",
+    "lastName": "Dream",
+    "address": "145 Miami",
+    "meterNumber": "9999999999999"
+  }
+]
